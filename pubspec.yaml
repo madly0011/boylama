@@ -1,0 +1,42 @@
+name: boylama
+description: Meyve Kasası Boyut Tespiti
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Kamera
+  camera: ^0.10.5+9
+
+  # TFLite - cihazda model çalıştırma
+  tflite_flutter: ^0.10.4
+
+  # Görüntü işleme
+  image: ^4.1.7
+
+  # Dosya sistemi
+  path_provider: ^2.1.2
+  path: ^1.9.0
+
+  # JSON
+  shared_preferences: ^2.2.2
+
+  # UI
+  cupertino_icons: ^1.0.6
+  flutter_spinkit: ^5.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/kasa_model.tflite
+    - assets/kasa_veri.json
